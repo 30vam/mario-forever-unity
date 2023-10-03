@@ -1,0 +1,80 @@
+bugs: (always compare each new script to the existing one in clickteam fusion)
+
+add block breaking particles
+backup now
+killing enemies that are above blocks
+question mark has a hidden boolean.
+make a +1up function when collecting the same power up twice
+fire mario
+make hitbox smaler when crouching
+make power ups, also add lives system and health, breakable brick,question boxes.
+maybe change small mario's sprite origin so it doesnt look weird after collecting powerup
+use a particle system with breakable bricks
+make question marks that spawn enemies
+how to make interactive tiles all have one hitbox? because goombas get stuck on bricks sometimes, because seperate box colliders act weird
+make animated tilemap
+make ui and HUD and menu
+crouching with super mario. while in crouching state, a much lower deacceleration value is used!
+make invicible state when taking damage, in invincible state you cant stomp enemies
+in pipe state (make pipes) inward, outwards, left right up and down.change camera AND cameras active player each time mario comes out of a pipe
+
+dont forget to backup after every important change
+******
+Tips i randomly thought of:
+Use enemie's Turning coroutine for turning platforms
+
+for changing gravity, maybe you can make gravity a positive number, and rotate objects by their LOCAL vector
+
+use camera Dutch value under active virtual camera's Lens Size to rotate it! then use a reverse control variable (that is either 1 or -1 and is multiplied by horizontalInput) and activate it when camera is rotated 
+ALSO USE A SEPERATE VIRTUAL CAMERA FOR THIS, AND SET THE BLEND TO EASE IN AND OUT FOR A COOL SWITCHING EFFECT.
+
+make red goombas, same thing as normal ones but theyre speed is 4 times more
+
+for pipe transitions use a second virtual camera and activate it, change the first camera's to standby mode in inspector.after entering a pipe ALSO HAVE A  PUBLIC VARIABLE FOR THE PIPE ENTRANCE,THAT LETS YOU CHOOSE THE CUSTOM CAMERA BLEND like cut,ease in, ease out, hard out, etc.
+these are all inside the main camera's BRAIN component
+
+for invisible walss, make a tilemap with blocks similar to gorund tilemap but turn off tilemap renderer
+
+for slopes, just make an object with box collider that is tilted in Z axis by 30 degrees and static rigidbody, 
+and put tiles on it. And then also rotate mario by 30 degree when on slope tiles.When on slopes,mario always sticks to the ground, no jumping or falling
+
+death condition: you're outside the view of the camera AND lower than the camera's bottom boundary
+
+for falling platforms use kinematic rigidbody or add physics material with 0 friction and check if the platforms falling speed is NOT bigger than mario's falling speed.
+for the platform itself, start a coroutine on collision with marios feet that activates rigidbody(that causes them to fall)
+if everything fails, turn off rigidbody when on platforms, and then turn it on again after jumping
+
+platform effector 2D component can make platforms that be moved past from below!! use it and check the Use One Way box.
+
+IF YOU HAVE PROBLEM WITH USING A TILE, SLICE IT IN THE EDITOR AND (MAKE SURE THE PIVOT POINT IS 0,0 OR TILE ANCHOR OF TILEMAP IS EQUAL TO ALL SPRITES PIVOT POINT)
+
+use n64 thwomp sound, and add camera shake effect when it hits ground
+
+use mafthf.slerp for flying koopa. flying enemies should change always look at marios direction
+*****
+ideas:
+test autoscrolling
+power to slowdown by pressing shift or f (you may need an item or power up for this)!
+instead of a countdown timer, use a normal stopwatch timer thata doesnt kill you, you get medals based on your completion time on the levels, getting a gold medal
+unlocks the hardcore version of that level! for some levels you can use a normal countdown timer IN ADDITION to normal timer too for a challenge.
+use lens flare/ find interesting 2D graphic additions in unity
+make secret areas (your can go through walls and the walls change opacity while youre inside them)
+you can move to levels in map like 3d world. each level plays a single part of map song looped.
+use Z coordinates to play parts of level in the background
+you can use 2d light objects intensity to make interesting levels!
+like super mario 3d world, collecting some cois reveals a series of others
+double cherry mario
+braid like gameplay (ability to reverse time)
+Rotate the camera for reverse effect! like roman worlds V
+whem mario looks up and down the camera also moves a little bit also maybe you can zoom in and out the camera with certain buttons (maybe make seperate animations for looking up and down)
+use camera shake for a level where castle is getting destroyed
+make zones
+make enemy zones.You have to kill all enemies to pass the blockade
+make bubbles that you can swim in
+add tutorials like rayman legends
+add yoshi
+make enemies that act like spring when stomping (jumpforce is much bigger when stomping these enemies)
+flame thrower,sword/ninja mario (like cat mario)
+double cherry power up
+use hammers as an item
+make enemies that you can move like a normal rigidbody, and they dont hurt you.

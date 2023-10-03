@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - Background
+  - Camera Boundry
+  - Music
+  - KillPlayer
+  - Enemy
+  - EnemyDeathBox
+  - Powerup
+  - Settings
+  - EnemyActivator
+  - ObjectActivator
+  - Interactive Block Trigger
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Ground
+  - Background
+  - Death Valley
+  - No collision
+  - Enemy
+  - Only Collides With Ground
+  - EnemyTurnBack
+  - Camera Boundary
+  - Powerup
+  - EnemyPhysics
+  - Interactive Blocks
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 789108019
+    locked: 0
+  - name: Scenery
+    uniqueID: 1820884261
+    locked: 0
+  - name: 'Ground '
+    uniqueID: 1001301263
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 2469303825
+    locked: 0
+  - name: Foreground
+    uniqueID: 4056087601
+    locked: 0
